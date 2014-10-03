@@ -3,7 +3,8 @@ class UsersController < ApplicationController
 
   # GET /users
   # GET /users.json
-  def index
+  # @var: bien thuc the, su dung trong cac phuong thuc khac nhau cua mot lop
+  def index    
     @users = User.all
   end
 
