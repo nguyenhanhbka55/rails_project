@@ -1,0 +1,14 @@
+<title>List item</title>
+<div class="container">
+	<div class="row">
+		<div class="span4">
+			<p>All the todos here</p>
+				<div class="well">
+					<% @todo_items.each do |t|%>
+						<li><%= t.todo_item %></li>	
+				<% end %>
+				</div>
+		</div>
+	</div>
+</div>
+<%= link_to "Delete ",t, method: :delete %>
